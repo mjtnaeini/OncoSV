@@ -1,3 +1,4 @@
+![Overview](logo.png)
 ## Installation and Testing
 
 Follow these steps to install and test the package:
