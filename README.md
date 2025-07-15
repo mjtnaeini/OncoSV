@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="OncoSV.png" alt="OncoSV Logo" width="300"/>
+  <img src="OncoSV.png" alt="OncoSV Logo" width="170"/>
 </p>
 ## Installation and Testing
 
