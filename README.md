@@ -1,4 +1,6 @@
-![Overview](logo.png)
+<p align="center">
+  <img src="logo.png" alt="OncoSV Logo" width="300"/>
+</p>
 ## Installation and Testing
 
 Follow these steps to install and test the package:
