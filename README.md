@@ -68,7 +68,7 @@ All commands use the unified CLI:
 oncsv --help
 ```
 
-### 1. Single Sample Consensus Calling
+### 1. Consensus Calling (Single Sample Only)
 Merge SVs from multiple callers:
 ```
 oncsv consensus \
@@ -76,10 +76,19 @@ oncsv consensus \
   -c sample.cutesv.vcf.gz \
   -v sample.svim.vcf.gz \
   -o output/sample_consensus.vcf.gz \
-  --quality-threshold 10 --chrom chr1,chr2
+  --quality-threshold 10 \
+  --chrom chr1,chr2
 ```
 
-### 2. Tumour-Normal Pair Analysis
+**Required arguments:**
+- `-s`, `-c`, `-v`: Input VCFs from Sniffles, CuteSV, and/or SVIM
+- At least 2 SV callers are required.
+
+**Optional arguments:**
+- `--quality-threshold`: Minimum quality threshold (default: 10)
+- `--chrom`: Specify chromosomes to include (comma-separated)
+
+### 2. Tumour-Normal Comparison
 Classify variants as somatic or germline:
 ```
 oncsv pair \
@@ -91,8 +100,19 @@ oncsv pair \
   -o output/
 ```
 
+**Required arguments:**
+- `-t`: Tumour VCF file
+- `-n`: Normal VCF file
+
+**Optional arguments:**
+- `--normal-mode`: Set to `single` or `multiple` to define if the normal VCF includes pooled samples (default: single)
+- `--svcaller`: Which SV caller was used (sniffles, cutesv, svim, or consensus)
+- `--only-somatic`: If set, only variants unique to the tumour will be output
+- `--exclude-somatic`: Outputs only germline variants
+- `--tumour-sample-id` / `--normal-sample-id`: If using multi-sample VCFs
+
 ### 3. Complex SV + Subclone Detection
-Use read-sharing and proximity to define SV networks:
+Use read-sharing and proximity to define SV networks and detect subclones:
 ```
 oncsv complexSV \
   --vcf output/sample_consensus.vcf.gz \
@@ -100,6 +120,16 @@ oncsv complexSV \
   --sample_id Sample01 \
   --chrom all
 ```
+
+**Required arguments:**
+- `--vcf`: Input VCF (can be consensus, somatic, or single-caller)
+- `--output_dir`: Where results are written
+
+**Optional arguments:**
+- `--chrom`: Chromosomes to include (`all` or comma-separated list)
+- `--sample_id`: Sample name for file labeling
+- `--min-shared`: Minimum number of shared reads to link SVs (default: 2)
+- `--proximity`: Maximum breakpoint proximity to consider SVs connected (default: 1000 bp)
 
 Output Files
 ------------
