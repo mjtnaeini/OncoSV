@@ -68,7 +68,7 @@ All commands use the unified CLI:
 oncsv --help
 ```
 
-### 1. Consensus Calling
+### 1. Single Sample Consensus Calling
 Merge SVs from multiple callers:
 ```
 oncsv consensus \
@@ -79,7 +79,7 @@ oncsv consensus \
   --quality-threshold 10 --chrom chr1,chr2
 ```
 
-### 2. Tumour-Normal Comparison
+### 2. Tumour-Normal Pair Analysis
 Classify variants as somatic or germline:
 ```
 oncsv pair \
