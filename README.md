@@ -15,7 +15,7 @@ Key Features
 - Chromosome-wise processing and filtering
 
 <p align="center">
-  <img src="framework.png" alt="framework"/>
+  <img src="framework.jpg" alt="framework"/>
 </p>
 
 Installation
