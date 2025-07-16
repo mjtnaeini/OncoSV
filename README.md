@@ -163,10 +163,3 @@ License
 -------
 
 MIT License
-
-Contact
--------
-
-Developed by **Marjan M. Naeini**  
-Computational Biologist, Garvan Institute of Medical Research  
-Email: m.naeini@garvan.org.au
