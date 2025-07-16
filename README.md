@@ -21,29 +21,38 @@ Key Features
 Installation
 ------------
 
-### 1. Create a virtual environment (recommended)
+We recommend installing OncoSV in a dedicated Python environment.
+
+### 1. Set up a virtual environment (optional but recommended)
 
 Using `venv`:
-```
+```bash
 python3 -m venv oncosv_env
 source oncosv_env/bin/activate
 ```
 
 Using `conda`:
-```
+```bash
 conda create -n oncosv_env python=3.10 -y
 conda activate oncosv_env
 ```
 
-### 2. Install from source
+### 2. Install OncoSV
+
+#### Option A: From GitHub (recommended for most users)
+```bash
+pip install git+https://github.com/mjtnaeini/OncoSV.git
 ```
-git clone https://github.com/YOUR_USERNAME/OncoSV.git
+
+#### Option B: Clone the repository and install manually
+```bash
+git clone https://github.com/mjtnaeini/OncoSV.git
 cd OncoSV
 pip install .
 ```
 
-### 3. Development mode
-```
+#### Option C: Development mode (for contributors)
+```bash
 pip install -e .
 ```
 
