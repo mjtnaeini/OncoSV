@@ -14,7 +14,7 @@ Key Features
 - Interactive HTML visualizations of SV graphs
 - Chromosome-wise processing and filtering
 
-<p align="center">
+<p align="left">
   <img src="framework.jpg" alt="Framework" style="max-width:100%; height:auto; margin:0; padding:0;"/>
 </p>
 
