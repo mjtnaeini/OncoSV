@@ -1,4 +1,4 @@
-OncoSV: A toolkit for consensus SV calling, somatic classification, complex SV analysis, and subclonal detection from long-read sequencing.
+OncoSV
 =======
 
 OncoSV is a modular Python toolkit for structural variant (SV) analysis using long-read sequencing data. It supports consensus calling from multiple SV callers, tumour-normal classification, complex event detection, and subclone reconstruction using graph-based methods.
