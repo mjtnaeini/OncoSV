@@ -59,16 +59,6 @@ Requirements
 - python-louvain
 - pyvis
 
-### Optional dependencies:
-- seaborn (advanced plots)
-- jupyter (interactive analysis)
-- argcomplete (CLI tab-completion)
-
-To install optional tools:
-```
-pip install seaborn jupyter argcomplete
-```
-
 Command-Line Interface
 ----------------------
 
