@@ -15,7 +15,7 @@ Key Features
 - Chromosome-wise processing and filtering
 
 <p align="left">
-  <img src="framework.jpg" alt="Framework" style="max-width:100%; height:auto; margin:0; padding:0;"/>
+  <img src="framework.jpg" alt="OncoSV Framework" width="900"/>
 </p>
 
 Installation
