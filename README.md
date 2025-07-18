@@ -120,7 +120,7 @@ oncsv pair \
 - `--exclude-somatic`: Outputs only germline variants
 - `--tumour-sample-id` / `--normal-sample-id`: If using multi-sample VCFs
 
-### 3. Complex SV + Subclone Detection
+### 3. Complex SV + Subclone Detection (under development)
 Use read-sharing and proximity to define SV networks and detect subclones:
 ```
 oncsv complexSV \
